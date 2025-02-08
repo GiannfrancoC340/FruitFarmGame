@@ -72,17 +72,17 @@ const App = () => {
       <div className="container">
         <h2>Apple Upgrades</h2>
         <div className="upgrade">
-          <h3>Apple Boost 🍎</h3>
+          <h3>Apple Boost</h3>
           <p>2x per click</p>
           <button onClick={buyAppleSmallBoost}>$10</button>
         </div>
         <div className="upgrade">
-          <h3>Super Apple Boost 🍎🔥</h3>
+          <h3>Super Apple Boost</h3>
           <p>3x per click</p>
           <button onClick={buyAppleBoost}>$100</button>
         </div>
         <div className="upgrade">
-          <h3>Ultimate Apple Boost 🍎💥</h3>
+          <h3>Ultimate Apple Boost</h3>
           <p>5x per click</p>
           <button onClick={buyAppleBigBoost}>$1000</button>
         </div>
@@ -90,17 +90,17 @@ const App = () => {
 
         <h2>Orange Upgrades</h2>
         <div className="upgrade">
-          <h3>Orange Boost 🍊</h3>
+          <h3>Orange Boost</h3>
           <p>3x per click</p>
           <button onClick={buyOrangeSmallBoost}>$15</button>
         </div>
         <div className="upgrade">
-          <h3>Super Orange Boost 🍊🔥</h3>
+          <h3>Super Orange Boost</h3>
           <p>6x per click</p>
           <button onClick={buyOrangeBoost}>$150</button>
         </div>
         <div className="upgrade">
-          <h3>Ultimate Orange Boost 🍊💥</h3>
+          <h3>Ultimate Orange Boost</h3>
           <p>9x per click</p>
           <button onClick={buyOrangeBigBoost}>$1500</button>
         </div>

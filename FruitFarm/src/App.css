@@ -76,14 +76,22 @@
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px; /* Adjust width */
+  height: 40px; /* Adjust height */
   padding: 0.3em 1em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
-  color:  rgba(255, 255, 255, 0.87);
+  color: rgba(255, 255, 255, 0.87);
   cursor: pointer;
   margin-top: 10px;
+  white-space: nowrap; /* Prevents text wrapping */
+  text-align: center;
+  word-wrap: break-word;
+  text-align: center;
+  padding: 10px;
 }
