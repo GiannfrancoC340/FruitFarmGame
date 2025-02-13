@@ -53,20 +53,6 @@
   transform: scale(0.95);
 }
 
-.raspberry {
-  height: 15em;
-  padding: 1.5em;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.watermelon {
-  height: 15em;
-  padding: 1.5em;
-  margin: 0 auto;
-  text-align: center;
-}
-
 .container {
   margin-top: 50px;
   display: flex;
