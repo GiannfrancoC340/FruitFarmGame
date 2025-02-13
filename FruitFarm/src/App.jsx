@@ -7,9 +7,11 @@ const App = () => {
   // Separate multipliers for apple and orange
   const [appleMultiplier, setAppleMultiplier] = useState(1);
   const [orangeMultiplier, setOrangeMultiplier] = useState(1);
+  const [bananaMultiplier, setBananaMultiplier] = useState(1);
 
   const updateCountApple = () => setCount(count + appleMultiplier);
   const updateCountOrange = () => setCount(count + orangeMultiplier);
+  const updateCountBanana = () => setCount(count + bananaMultiplier);
 
   // Apple Upgrades
   const buyAppleSmallBoost = () => {
@@ -55,6 +57,28 @@ const App = () => {
     }
   };
 
+  // Banana Upgrades
+  const buyBananaSmallBoost = () => {
+    if (count >= 20) {
+      setBananaMultiplier(bananaMultiplier * 3);
+      setCount(count - 20);
+    }
+  };
+
+  const buyBananaBoost = () => {
+    if (count >= 200) {
+      setBananaMultiplier(bananaMultiplier * 6);
+      setCount(count - 200);
+    }
+  };
+
+  const buyBananaBigBoost = () => {
+    if (count >= 2000) {
+      setBananaMultiplier(bananaMultiplier * 9);
+      setCount(count - 2000);
+    }
+  };
+
   return (
     <div className="App">
       <div className="header">
@@ -63,8 +87,8 @@ const App = () => {
         <h2>Amount of $: {count}</h2>
         <img className="apple" src="https://pngimg.com/d/apple_PNG12439.png" alt="apple" onClick={updateCountApple} />
         <img className="orange" src="https://png.pngtree.com/element_our/png/20180903/orange-png-png_75700.jpg" alt="orange" onClick={updateCountOrange} />
-        {/* <img className="banana" src="https://png.pngtree.com/png-clipart/20220716/ourmid/pngtree-banana-yellow-fruit-banana-skewers-png-image_5944324.png" alt="banana"/>
-        <img className="raspberry" src="https://static.vecteezy.com/system/resources/previews/022/825/589/non_2x/raspberry-fruit-raspberries-on-transparent-background-png.png" alt="raspberry"/>
+        <img className="banana" src="https://png.pngtree.com/png-clipart/20220716/ourmid/pngtree-banana-yellow-fruit-banana-skewers-png-image_5944324.png" alt="banana"/>
+        {/*<img className="raspberry" src="https://static.vecteezy.com/system/resources/previews/022/825/589/non_2x/raspberry-fruit-raspberries-on-transparent-background-png.png" alt="raspberry"/>
         <img className="watermelon" src="https://static.vecteezy.com/system/resources/previews/034/333/584/non_2x/set-fresh-watermelon-fruit-and-sliced-on-isolated-transparent-background-free-png.png" alt="watermelon"/>
        */}
       </div>
@@ -105,6 +129,25 @@ const App = () => {
           <h3>Ultimate Orange Boost</h3>
           <p>9x per click</p>
           <button onClick={buyOrangeBigBoost}>$1500</button>
+        </div>
+
+
+        <h2>Banana Upgrades</h2>
+        <h4>Current Banana multiplier: x{bananaMultiplier}</h4>
+        <div className="upgrade">
+          <h3>Banana Boost</h3>
+          <p>3x per click</p>
+          <button onClick={buyBananaSmallBoost}>$20</button>
+        </div>
+        <div className="upgrade">
+          <h3>Super Banana Boost</h3>
+          <p>6x per click</p>
+          <button onClick={buyBananaBoost}>$200</button>
+        </div>
+        <div className="upgrade">
+          <h3>Ultimate Banana Boost</h3>
+          <p>9x per click</p>
+          <button onClick={buyBananaBigBoost}>$2000</button>
         </div>
       </div>
     </div>

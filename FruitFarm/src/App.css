@@ -44,6 +44,15 @@
   text-align: center;
 }
 
+.banana:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.banana:active {
+  transform: scale(0.95);
+}
+
 .raspberry {
   height: 15em;
   padding: 1.5em;
