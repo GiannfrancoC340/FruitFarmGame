@@ -92,3 +92,13 @@ h3 {
   white-space: normal; /* Allows wrapping */
   word-wrap: break-word; /* Breaks long words */
 }
+
+h4 {
+  color: #ffcc00; /* Gold color for emphasis */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  margin-top: 110px;
+  margin-left: -110px;
+  font-size: 1.2em;
+  font-weight: bold;
+}

@@ -71,6 +71,7 @@ const App = () => {
 
       <div className="container">
         <h2>Apple Upgrades</h2>
+        <h4>Current Apple multiplier: x{appleMultiplier}</h4>
         <div className="upgrade">
           <h3>Apple Boost</h3>
           <p>2x per click</p>
@@ -89,6 +90,7 @@ const App = () => {
 
 
         <h2>Orange Upgrades</h2>
+        <h4>Current Orange multiplier: x{orangeMultiplier}</h4>
         <div className="upgrade">
           <h3>Orange Boost</h3>
           <p>3x per click</p>
